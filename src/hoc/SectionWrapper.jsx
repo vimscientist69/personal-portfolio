@@ -10,8 +10,12 @@ const StarWrapper = (Component, idName) =>
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
-        viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0 `}
+        viewport={{ 
+          once: true, 
+          amount: window.innerWidth < 640 ? 0.1 : 0.25, // Less scroll trigger needed on mobile
+          margin: '-50px 0px -50px 0px' // Slightly increase the viewport margin on mobile
+        }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
         <span className='hash-span' id={idName}>
           &nbsp;

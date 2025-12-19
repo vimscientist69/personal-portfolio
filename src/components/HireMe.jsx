@@ -1,7 +1,4 @@
-import React from "react";
-import { PopupWidget } from "react-calendly";
 import {
-  VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
@@ -9,7 +6,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences, services } from "../constants";
+import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import {ServiceCard} from "./About.jsx"
@@ -74,13 +71,10 @@ const HireMe = () => {
 
       <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (
-          <>
-            {["Backend Developer", "Full-Stack Developer", "Automations Developer"].includes(service.title) && 
-          <Link to="https://calendly.com/vimscientist69/30min">
+            ["Backend Developer", "Full-Stack Developer", "Automations Developer"].includes(service.title) && 
+          <Link key={service.title} to="https://calendly.com/vimscientist69/30min">
             <ServiceCard key={service.title} index={index} {...service} />
           </Link>
-            }
-          </>
         ))}
       </div>
     </>
