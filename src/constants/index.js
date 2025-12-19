@@ -19,9 +19,6 @@ import {
     swift,
     python,
     postgresql,
-    cookiejar,
-    superHero,
-    tripguide,
 } from "../assets";
 
 export const navLinks = [
@@ -151,131 +148,252 @@ const experiences = [
 ];
 
 const projects = [
-    {
-        name: "Automa",
-        description:
-        "Automa is an automation sulation made for humans. Allowing everyone to automate Any social media at the click of a few buttons.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "swift",
-                color: "green-text-gradient",
-            },
-            { 
-                name: "supabase", color: "green-text-gradient",
-            },
-            {
-                name: "chakra-ui",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "zustand",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "python",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "GO",
-                color: "green-text-gradient",
-            },
-            {
-                name: "openai",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scala",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "docker",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "kubernetes",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "And about 50 unique technologies more...",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: 'https://github.com/Automa-Automations/.github/assets/122154257/b1933428-b151-4117-8549-8f357af3bf72',
-        source_code_link: "https://github.com/Automa-Automations/",
-        live_demo: "https://youtube.com/@AdonisCodes",
-    },
-    {
-        name: "SuperHero.",
-        description:
-        "A web-application that enables users to lookup their favourite heros. The app features stunning animations. Quick load times thanks to the SPA architecture & Svelte framework. The app will show stats on all super heros, with a simple search. This was a little dummy project for me.",
-        tags: [
-            {
-                name: "Svelte",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "CSS",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: superHero,
-        source_code_link: "https://github.com/",
-        live_demo: "https://super-hero-api-app-lol.onrender.com/",
-    },
-    {
-        name: "And Many more...",
-        description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "Moviepy",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Selenium",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "requests",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "Puppeteer",
-                color: "green-text-gradient",
-            },
-            {
-                name: "APIS",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: "https://placehold.co/600x400?text=Check My Github&font=roboto",
-        source_code_link: "https://github.com/AdonisCodes",
-        live_demo: "https://github.com/AdonisCodes",
-    },
+  {
+    name: "AutomaInfraCore",
+    description:
+      "AutomaInfraCore is the core infrastructure powering the Automa application.",
+    tags: [
+      {
+        name: "vapor",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ios",
+        color: "green-text-gradient",
+      },
+      {
+        name: "macos",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "backend",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "swiftui",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ai-integration",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "https://avatars.githubusercontent.com/u/182446307?s=200&v=4",
+    source_code_link: "https://github.com/GetAutomaApp/AutomaInfraCore",
+    live_demo: "https://getautoma.app/",
+  },
+  {
+    name: "SwiftWebDriver",
+    description:
+      "Library allows you to work with Selenium WebDriver on server-side Swift.",
+    tags: [
+      {
+        name: "swift",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "selenium",
+        color: "green-text-gradient",
+      },
+      {
+        name: "webdriver",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "server-side-swift",
+        color: "green-text-gradient",
+      },
+      {
+        name: "automation",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "chrome-driver",
+        color: "green-text-gradient",
+      },
+      {
+        name: "swift-package",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ui-testing",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "browser-automation",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "https://avatars.githubusercontent.com/u/182446307?s=200&v=4",
+    source_code_link: "https://github.com/GetAutomaApp/SwiftWebDriver",
+    live_demo: "https://getautoma.app/",
+  },
+  {
+    name: "AutomaWebCore",
+    description: "Web automation infrastructure for Automa.",
+    tags: [
+      {
+        name: "swift",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vapor",
+        color: "green-text-gradient",
+      },
+      {
+        name: "selenium-grid",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "autoscaling",
+        color: "green-text-gradient",
+      },
+      {
+        name: "web-automation",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "fly-io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api-service",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "server-side-swift",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "infrastructure",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "https://avatars.githubusercontent.com/u/182446307?s=200&v=4",
+    source_code_link: "https://github.com/GetAutomaApp/AutomaWebCore",
+    live_demo: "https://getautoma.app/",
+  },
+  {
+    name: "RoutineAlarm",
+    description:
+      "A small Android utility that reads markdown daily routines and creates alarms in the system Clock app",
+    tags: [
+      {
+        name: "android",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "kotlin",
+        color: "green-text-gradient",
+      },
+      {
+        name: "productivity",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "markdown",
+        color: "green-text-gradient",
+      },
+      {
+        name: "alarms",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "clock",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "obsidian",
+        color: "green-text-gradient",
+      },
+    ],
+    image:
+      "https://raw.githubusercontent.com/vimscientist69/RoutineAlarm/refs/heads/main/Screenshot%202025-12-19%20at%2013.49.01.png",
+    source_code_link: "https://github.com/vimscientist69/RoutineAlarm",
+    live_demo: "https://github.com/vimscientist69/RoutineAlarm",
+  },
+  {
+    name: "Mood Tracker",
+    description:
+      "Simple mood tracker application using Expo (React Native) and Firebase.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "expo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mood-tracking",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mental-health",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "green-text-gradient",
+      },
+    ],
+    image:
+      "https://private-user-images.githubusercontent.com/198056728/528110937-f03e2259-be5c-4889-bb80-53daefbea96e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjYxNDU0NjAsIm5iZiI6MTc2NjE0NTE2MCwicGF0aCI6Ii8xOTgwNTY3MjgvNTI4MTEwOTM3LWYwM2UyMjU5LWJlNWMtNDg4OS1iYjgwLTUzZGFlZmJlYTk2ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxOVQxMTUyNDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOGNmNDViY2Q5ODhiY2FlNjg5MDg5NWVhNDZhMDcxNGQyN2I1MDlmNGYyMTlkMTZkZTkxNjYxZjlmMjNkYWE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.s3oJMHADsMoe8qElYIHY-r4dxbUwguB84CDYSOARF4E",
+    source_code_link:
+      "https://github.com/vimscientist69/Mood-Tracker-Application",
+    live_demo: "https://github.com/vimscientist69/Mood-Tracker-Application",
+  },
+  {
+    name: "And Many more...",
+    description:
+      "I build small projects to address personal needs, enhance developer workflow, apply CS concepts, and create tools and microservices for our AI startup, Automa.",
+    tags: [
+      {
+        name: "automation",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "productivity-tools",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "backend-services",
+        color: "green-text-gradient",
+      },
+      {
+        name: "developer-tools",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "https://placehold.co/600x400?text=Check My Github&font=roboto",
+    source_code_link: "https://github.com/vimscientist69",
+    live_demo: "https://github.com/vimscientist69",
+  },
 ];
 
 export { services, technologies, experiences, projects };

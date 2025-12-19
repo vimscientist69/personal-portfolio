@@ -20,17 +20,11 @@ import swift from "./tech/swift.png"
 import python from "./tech/python.png"
 import postgresql from "./tech/postgresql.png"
 
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import nextjs from "./tech/nextjs.png"
 
 import replit from "./company/replit.png";
 import automa from "./company/automa.png"
-
-import cookiejar from "./cookiejar.png";
-import superHero from "./superHero.png";
-import tripguide from "./tripguide.png";
 
 export {
     logo,
@@ -49,8 +43,6 @@ export {
     javascript,
     nodejs,
     reactjs,
-    redux,
-    tailwind,
     typescript,
     nextjs,
     fly,
@@ -58,8 +50,5 @@ export {
     python,
     postgresql,
     replit,
-    automa,
-    cookiejar,
-    superHero,
-    tripguide,
+    automa
 };
