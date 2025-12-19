@@ -362,8 +362,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image:
-      "https://private-user-images.githubusercontent.com/198056728/528110937-f03e2259-be5c-4889-bb80-53daefbea96e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjYxNDU0NjAsIm5iZiI6MTc2NjE0NTE2MCwicGF0aCI6Ii8xOTgwNTY3MjgvNTI4MTEwOTM3LWYwM2UyMjU5LWJlNWMtNDg4OS1iYjgwLTUzZGFlZmJlYTk2ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxOVQxMTUyNDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOGNmNDViY2Q5ODhiY2FlNjg5MDg5NWVhNDZhMDcxNGQyN2I1MDlmNGYyMTlkMTZkZTkxNjYxZjlmMjNkYWE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.s3oJMHADsMoe8qElYIHY-r4dxbUwguB84CDYSOARF4E",
+    image: "https://raw.githubusercontent.com/vimscientist69/Mood-Tracker-Application/refs/heads/master/assets/mood-tracker.png",
     source_code_link:
       "https://github.com/vimscientist69/Mood-Tracker-Application",
     live_demo: "https://github.com/vimscientist69/Mood-Tracker-Application",
