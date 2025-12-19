@@ -65,7 +65,7 @@ const HireMe = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          Hire me as an independant freelancer
+          I'm open to work full-time remotely
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Hire Me! 👋
@@ -75,8 +75,8 @@ const HireMe = () => {
       <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (
           <>
-            {["Native Developer", "Backend Developer", "Automations Developer"].includes(service.title) && 
-          <Link to="https://calendly.com/business-f3zu/30min">
+            {["Backend Developer", "Full-Stack Developer", "Automations Developer"].includes(service.title) && 
+          <Link to="https://calendly.com/vimscientist69/30min">
             <ServiceCard key={service.title} index={index} {...service} />
           </Link>
             }

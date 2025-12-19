@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { OrbitControls, Preload } from "@react-three/drei";
-import { Canvas } from "react-three-fiber";
+import { Canvas } from "@react-three/fiber";
 
 import CanvasLoader from "../Loader";
 
@@ -56,21 +56,22 @@ const EarthCanvas = () => {
           }
         };
         
-        const response = await fetch(`https://corsproxy.io/?url=${encodeURIComponent("https://uvdvlzzjiciqsfkl7u37nnhnsm0sleur.lambda-url.eu-central-1.on.aws/?username=AdonisCodes&year=2023")}`, options)
+        const response = await fetch(`https://corsproxy.io/?url=${encodeURIComponent("https://uvdvlzzjiciqsfkl7u37nnhnsm0sleur.lambda-url.eu-central-1.on.aws/?username=vimscientist69&year=2025")}`, options)
           
         const data = await response.json();
         const heigtsArr = data.user.contributionsCollection.contributionCalendar.weeks
-        console.log(heigtsArr)
+        console.log(`Heights Array: ${JSON.stringify(heigtsArr)}`);
         const buildingHeights = heigtsArr.map((week) => {
           return week.contributionDays.reduce((acc, day) => {
             console.log(day.contributionCount)
             return acc + day.contributionCount;
           }, 0);
         });
-        console.log(buildingHeights)
+        console.log(`Building Heights: ${JSON.stringify(buildingHeights)}`);
         setBuildingHeights(buildingHeights);
       } catch (error) {
         console.error("Error fetching JSON data:", error);
+        console.log("Response data:", data || "No data received");
       }
     };
 

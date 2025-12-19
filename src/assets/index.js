@@ -13,50 +13,53 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import fly from "./tech/fly.png"
+import swift from "./tech/swift.png"
+import python from "./tech/python.png"
+import postgresql from "./tech/postgresql.png"
+
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
 import replit from "./company/replit.png";
-import fiverr from "./company/fiverr.png";
+import automa from "./company/automa.png"
 
 import cookiejar from "./cookiejar.png";
 import superHero from "./superHero.png";
 import tripguide from "./tripguide.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  replit,
-  fiverr,
-  cookiejar,
-  superHero,
-  tripguide,
+    logo,
+    backend,
+    creator,
+    mobile,
+    web,
+    github,
+    menu,
+    close,
+    css,
+    docker,
+    figma,
+    git,
+    html,
+    javascript,
+    nodejs,
+    reactjs,
+    redux,
+    tailwind,
+    typescript,
+    nextjs,
+    fly,
+    swift,
+    python,
+    postgresql,
+    replit,
+    automa,
+    cookiejar,
+    superHero,
+    tripguide,
 };

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import pfp from "../assets/profile-picture.png";
+import pfp from "../assets/profile-picture.jpeg";
 
 const Hero = () => {
   return (
@@ -16,11 +16,11 @@ const Hero = () => {
         <div>
           
           <h1 className={`${styles.heroHeadText} text-white mt-2 sm:mt-0 sm:ml-4`}>
-            Hi, I'm <span className='text-[tomato]'>Simon!</span>
+            Hi, I'm <span className='text-[tomato]'>William!</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web-apps, user <br className='sm:block hidden' />
-            interfaces, automation scripts & <br className='sm:block hidden' />
+            I develop web-apps, backend <br className='sm:block hidden' />
+            systems, automation tools & <br className='sm:block hidden' />
             more!
           </p>
         </div>

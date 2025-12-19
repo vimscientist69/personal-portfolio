@@ -50,16 +50,16 @@
 
       emailjs
         .send(
-          'service_63r85f9',
-          "template_8x0cciz",
+          'williamferns-org-pfio',
+          "template_dmoodgb",
           {
             name: form.name,
-            to_name: "Simon Ferns",
+            to_name: "William Ferns",
             email: form.email,
-            to_email: "s.f.businessacc@gmail.com",
+            to_email: "vimscientist69@gmail.com",
             message: form.message,
           },
-          "CaJOJpsMV7iuCquNE"
+          "GxpcuDK4zVZixKvl6"
         )
         .then(
           () => {
@@ -88,7 +88,7 @@
       >
 
   <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='flex-[0.25]'>
-      <GitHubCalendar username="AdonisCodes"
+      <GitHubCalendar username="vimscientist69"
       labels={{
         totalCount: `{{count}} contributions in the last year`,
       }}
