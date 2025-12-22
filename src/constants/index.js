@@ -290,45 +290,6 @@ const projects = [
     live_demo: "https://getautoma.app/",
   },
   {
-    name: "RoutineAlarm",
-    description:
-      "A small Android utility that reads markdown daily routines and creates alarms in the system Clock app",
-    tags: [
-      {
-        name: "android",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "kotlin",
-        color: "green-text-gradient",
-      },
-      {
-        name: "productivity",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "markdown",
-        color: "green-text-gradient",
-      },
-      {
-        name: "alarms",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "clock",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "obsidian",
-        color: "green-text-gradient",
-      },
-    ],
-    image:
-      "https://raw.githubusercontent.com/vimscientist69/RoutineAlarm/refs/heads/main/Screenshot%202025-12-19%20at%2013.49.01.png",
-    source_code_link: "https://github.com/vimscientist69/RoutineAlarm",
-    live_demo: "https://github.com/vimscientist69/RoutineAlarm",
-  },
-  {
     name: "Mood Tracker",
     description:
       "Simple mood tracker application using Expo (React Native) and Firebase.",
@@ -368,30 +329,109 @@ const projects = [
     live_demo: "https://github.com/vimscientist69/Mood-Tracker-Application",
   },
   {
-    name: "And Many more...",
+    name: "YouTube Selenium Py",
     description:
-      "I build small projects to address personal needs, enhance developer workflow, apply CS concepts, and create tools and microservices for our AI startup, Automa.",
+      "",
+    tags: [
+    ],
+    image: "",
+    source_code_link:
+      "https://github.com/GetAutomaApp/youtube_selenium_py.git",
+    live_demo: "https://github.com/GetAutomaApp/youtube_selenium_py.git",
+  },
+  {
+    name: "RoutineAlarm",
+    description:
+      "A small Android utility that reads markdown daily routines and creates alarms in the system Clock app",
     tags: [
       {
-        name: "automation",
+        name: "android",
         color: "blue-text-gradient",
       },
       {
-        name: "productivity-tools",
+        name: "kotlin",
+        color: "green-text-gradient",
+      },
+      {
+        name: "productivity",
         color: "pink-text-gradient",
       },
       {
-        name: "backend-services",
+        name: "markdown",
         color: "green-text-gradient",
       },
       {
-        name: "developer-tools",
+        name: "alarms",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "clock",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "obsidian",
         color: "green-text-gradient",
       },
     ],
-    image: "https://placehold.co/600x400?text=Check My Github&font=roboto",
-    source_code_link: "https://github.com/vimscientist69",
-    live_demo: "https://github.com/vimscientist69",
+    image:
+      "https://raw.githubusercontent.com/vimscientist69/RoutineAlarm/refs/heads/main/Screenshot%202025-12-19%20at%2013.49.01.png",
+    source_code_link: "https://github.com/vimscientist69/RoutineAlarm",
+    live_demo: "https://github.com/vimscientist69/RoutineAlarm",
+  },
+  {
+    name: "2D Platformer Game",
+    description:
+      "",
+    tags: [
+    ],
+    image: "",
+    source_code_link:
+      "https://github.com/vimscientist69/2D-Platformer-Game",
+    live_demo: "https://2d-platformer-game.williamferns.org",
+  },
+  {
+    name: "i3wm Nightlight",
+    description:
+      "",
+    tags: [
+    ],
+    image: "",
+    source_code_link:
+      "https://github.com/vimscientist69/i3-nightlight",
+    live_demo: "https://github.com/vimscientist69/i3-nightlight",
+  },
+  {
+    name: "TMUX for VS Code Extension",
+    description:
+      "",
+    tags: [
+    ],
+    image: "",
+    source_code_link:
+      "https://github.com/vimscientist69/tmux-for-vscode",
+    live_demo: "https://github.com/vimscientist69/tmux-for-vscode",
+  },
+  {
+    name: "Marvelium",
+    description:
+      "",
+    tags: [
+    ],
+    image: "",
+    source_code_link:
+      "https://github.com/vimscientist69/Marvelium",
+    live_demo: "https://marvelium.williamferns.org",
+  },
+  {
+    name: "Web Scraping Collection",
+    description:
+      "",
+    tags: [
+    ],
+    image: "",
+    source_code_link:
+      "https://github.com/vimscientist69/web-automation-collection",
+    live_demo: "https://github.com/vimscientist69/web-automation-collection",
   },
 ];
 
