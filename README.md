@@ -7,6 +7,8 @@
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.12.16-0055FF?logo=framer&logoColor=white)](https://www.framer.com/motion/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+<img width="1909" height="1039" alt="image" src="https://github.com/user-attachments/assets/f67a4a98-0ee5-418a-8c36-c6fdacd0c360" />
+
 A modern, responsive personal portfolio website based on [Simon Ferns' portfolio](https://simonferns.com), which itself is a customized version of the [3D Developer Portfolio](https://github.com/adrianhajdin/project_3D_developer_portfolio) by Adrian Hajdin. This version includes some modifications and improvements while maintaining the core functionality and design language of the original projects.
 
 ## 🚀 Features
