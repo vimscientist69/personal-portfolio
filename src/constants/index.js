@@ -331,10 +331,34 @@ const projects = [
   {
     name: "YouTube Selenium Py",
     description:
-      "",
+      "Python package that simplifies interactions with YouTube using Selenium.",
     tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "automation",
+        color: "green-text-gradient",
+      },
+      {
+        name: "youtube",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "selenium",
+        color: "green-text-gradient",
+      },
+      {
+        name: "youtube-api-v3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "package",
+        color: "pink-text-gradient",
+      },
     ],
-    image: "",
+    image: "https://avatars.githubusercontent.com/u/182446307?s=200&v=4",
     source_code_link:
       "https://github.com/GetAutomaApp/youtube_selenium_py.git",
     live_demo: "https://github.com/GetAutomaApp/youtube_selenium_py.git",
@@ -381,10 +405,26 @@ const projects = [
   {
     name: "2D Platformer Game",
     description:
-      "",
+      "A simple 2D platformer game, made with HTML, CSS, and JavaScript.",
     tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "freecodecamp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "2d-game",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "platformer-game",
+        color: "green-text-gradient",
+      }
     ],
-    image: "",
+    image: "https://raw.githubusercontent.com/vimscientist69/2D-Platformer-Game/refs/heads/master/2d-platformer.png",
     source_code_link:
       "https://github.com/vimscientist69/2D-Platformer-Game",
     live_demo: "https://2d-platformer-game.williamferns.org",
@@ -392,32 +432,90 @@ const projects = [
   {
     name: "i3wm Nightlight",
     description:
-      "",
+      "A script for managing display color temperature to reduce blue light exposure during night-time computer use.",
     tags: [
+      {
+        name: "linux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "i3wm",
+        color: "green-text-gradient",
+      },
+      {
+        name: "shell-scripting",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nightlight",
+        color: "green-text-gradient",
+      }
     ],
-    image: "",
+    image: "https://raw.githubusercontent.com/vimscientist69/i3-nightlight/refs/heads/master/i3wm.png",
     source_code_link:
       "https://github.com/vimscientist69/i3-nightlight",
     live_demo: "https://github.com/vimscientist69/i3-nightlight",
   },
   {
     name: "TMUX for VS Code Extension",
-    description:
-      "",
+    description: "Direct TMUX integration into VS Code.",
     tags: [
+      {
+        name: "tmux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vscode-extension",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "dev-tools",
+        color: "green-text-gradient",
+      }
     ],
-    image: "",
-    source_code_link:
-      "https://github.com/vimscientist69/tmux-for-vscode",
+    image: "https://raw.githubusercontent.com/vimscientist69/tmux-for-vscode/refs/heads/main/tmux-for-vscode.png",
+    source_code_link: "https://github.com/vimscientist69/tmux-for-vscode",
     live_demo: "https://github.com/vimscientist69/tmux-for-vscode",
   },
   {
     name: "Marvelium",
     description:
-      "",
+      "A React-based superhero encyclopedia powered by the Superhero API.",
     tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-router",
+        color: "green-text-gradient",
+      },
+      {
+        name: "frontend",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "web-app",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "api-integration",
+        color: "green-text-gradient",
+      },
     ],
-    image: "",
+    image: "https://raw.githubusercontent.com/vimscientist69/Marvelium/refs/heads/main/public/screenshot.png",
     source_code_link:
       "https://github.com/vimscientist69/Marvelium",
     live_demo: "https://marvelium.williamferns.org",
@@ -425,10 +523,22 @@ const projects = [
   {
     name: "Web Scraping Collection",
     description:
-      "",
+      "A collection of small web scraping/automation projects using Python, Selenium and Requests.",
     tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "selenium",
+        color: "green-text-gradient",
+      },
+      {
+        name: "beautifulsoup",
+        color: "green-text-gradient",
+      },
     ],
-    image: "",
+    image: "https://raw.githubusercontent.com/vimscientist69/web-automation-collection/refs/heads/main/web-scraping-collection.png",
     source_code_link:
       "https://github.com/vimscientist69/web-automation-collection",
     live_demo: "https://github.com/vimscientist69/web-automation-collection",
