@@ -37,6 +37,11 @@ export const navLinks = [
     {
         id: "hire",
         title: "Hire Me",
+    },
+    {
+        title: "Blog",
+        id: "blog",
+        link: "https://garden.williamferns.org",
     }
 ];
 
@@ -366,7 +371,7 @@ const projects = [
   {
     name: "RoutineAlarm",
     description:
-      "A small Android utility that reads markdown daily routines and creates alarms in the system Clock app",
+      "A small Android utility that reads markdown daily routines and creates alarms in the system Clock app.",
     tags: [
       {
         name: "android",
