@@ -34,10 +34,10 @@ export const navLinks = [
         id: "contact",
         title: "Contact",
     },
-    {
-        id: "hire",
-        title: "Hire Me",
-    },
+    // {
+    //     id: "hire",
+    //     title: "Hire Me",
+    // },
     {
         title: "Blog",
         id: "blog",
