@@ -38,11 +38,11 @@ export const navLinks = [
     //     id: "hire",
     //     title: "Hire Me",
     // },
-    {
-        title: "Blog",
-        id: "blog",
-        link: "https://garden.williamferns.org",
-    }
+    // {
+    //     title: "Blog",
+    //     id: "blog",
+    //     link: "https://garden.williamferns.org",
+    // }
 ];
 
 const services = [
