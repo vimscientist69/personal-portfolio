@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import pfp from "../assets/professional-headshot.png";
+import pfp from "../assets/professional-pic.jpeg";
 
 const Hero = () => {
   return (
