@@ -25,6 +25,7 @@ import nextjs from "./tech/nextjs.png"
 
 import replit from "./company/replit.png";
 import automa from "./company/automa.png"
+import upwork from "./company/upwork.png"
 
 export {
     logo,
@@ -50,5 +51,6 @@ export {
     python,
     postgresql,
     replit,
-    automa
+    automa,
+    upwork,
 };

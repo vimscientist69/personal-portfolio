@@ -13,6 +13,7 @@ import {
     figma,
     docker,
     nextjs,
+    upwork,
     automa,
     replit,
     fly,
@@ -124,6 +125,18 @@ const technologies = [
 ];
 
 const experiences = [
+    {
+        title: "Freelance Software Developer",
+        company_name: "Upwork",
+        icon: upwork,
+        iconBg: "black",
+        date: "February 2026 - Present day",
+        points: [
+            "Providing freelance web scraping solutions for data extraction, automation, and analysis",
+            "Developing and maintaining backend services, APIs, and databases for web applications",
+            "Building full-stack web applications with a focus on scalability, reliability, and clean architecture"
+        ],
+    },
     {
         title: "Software Developer",
         company_name: "Automa",
