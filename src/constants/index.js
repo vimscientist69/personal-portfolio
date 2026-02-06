@@ -132,9 +132,9 @@ const experiences = [
         iconBg: "black",
         date: "February 2026 - Present day",
         points: [
+            "Built a flight booking platform with Next.js integrating the Riya Travel API, featuring real-time search, multi-currency support, dynamic pricing, and an admin dashboard for managing markups and incentives.",
             "Providing freelance web scraping solutions for data extraction, automation, and analysis",
             "Developing and maintaining backend services, APIs, and databases for web applications",
-            "Building full-stack web applications with a focus on scalability, reliability, and clean architecture"
         ],
     },
     {
@@ -306,6 +306,39 @@ const projects = [
     image: "https://avatars.githubusercontent.com/u/182446307?s=200&v=4",
     source_code_link: "https://github.com/GetAutomaApp/AutomaWebCore",
     live_demo: "https://getautoma.app/",
+  },
+  {
+    name: "Flight Booking Platform",
+    description: "Full-stack flight booking platform with real-time search and multi-currency support.",
+    tags: [
+        {
+            name: "next.js",
+            color: "blue-text-gradient",
+        },
+        {
+            name: "typescript",
+            color: "green-text-gradient",
+        },
+        {
+            name: "react",
+            color: "blue-text-gradient",
+        },
+        {
+            name: "tailwindcss",
+            color: "pink-text-gradient",
+        },
+        {
+            name: "api-integration",
+            color: "green-text-gradient",
+        },
+        {
+            name: "multi-currency",
+            color: "blue-text-gradient",
+        },
+    ],
+    image: "",
+    source_code_link: "https://marine-flight-booking-platform.williamferns.org",
+    live_demo: "https://marine-flight-booking-platform.williamferns.org",
   },
   {
     name: "Mood Tracker",
