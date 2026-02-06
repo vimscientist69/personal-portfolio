@@ -35,10 +35,10 @@ export const navLinks = [
         id: "contact",
         title: "Contact",
     },
-    // {
-    //     id: "hire",
-    //     title: "Hire Me",
-    // },
+    {
+        id: "hire",
+        title: "Hire Me",
+    },
     // {
     //     title: "Blog",
     //     id: "blog",
@@ -54,10 +54,6 @@ const services = [
     {
         title: "Full-Stack Developer",
         icon: web,
-    },
-    {
-        title: "Native Developer",
-        icon: mobile,
     },
     {
         title: "Automations Developer",

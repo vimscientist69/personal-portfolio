@@ -62,7 +62,7 @@ const HireMe = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          I'm open to work full-time remotely
+          I'm open to work part-time remotely
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Hire Me! 👋
