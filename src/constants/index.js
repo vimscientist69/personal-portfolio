@@ -332,7 +332,7 @@ const projects = [
             color: "blue-text-gradient",
         },
     ],
-    image: "",
+    image: "https://raw.githubusercontent.com/vimscientist69/personal-portfolio/refs/heads/main/src/assets/projects/marine-flight-booking-platform.png",
     source_code_link: "https://marine-flight-booking-platform.williamferns.org",
     live_demo: "https://marine-flight-booking-platform.williamferns.org",
   },
