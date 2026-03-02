@@ -247,6 +247,35 @@ const projects = [
     live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
   },
   {
+    name: "PropFlux",
+    description: "PropFlux is a scalable real estate data extraction engine designed for resilient, multi-site scraping.",
+    tags: [
+        {
+            name: "python",
+            color: "blue-text-gradient",
+        },
+        {
+            name: "scrapy",
+            color: "green-text-gradient",
+        },
+        {
+            name: "selenium",
+            color: "pink-text-gradient",
+        },
+        {
+            name: "web-scraping",
+            color: "blue-text-gradient",
+        },
+        {
+            name: "anti-bot-bypass",
+            color: "green-text-gradient",
+        },
+    ],
+    image: "https://raw.githubusercontent.com/vimscientist69/PropFlux/refs/heads/main/assets/logo.png",
+    source_code_link: "https://github.com/vimscientist69/PropFlux",
+    live_demo: "https://github.com/vimscientist69/PropFlux",
+  },
+  {
     name: "AutomaWebCore",
     description: "Web automation infrastructure for Automa.",
     tags: [
@@ -290,35 +319,6 @@ const projects = [
     image: "https://raw.githubusercontent.com/GetAutomaApp/AutomaWebCore/refs/heads/main/assets/logo.png",
     source_code_link: "https://github.com/GetAutomaApp/AutomaWebCore",
     live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
-  },
-  {
-    name: "PropFlux",
-    description: "PropFlux is a scalable real estate data extraction engine designed for resilient, multi-site scraping.",
-    tags: [
-        {
-            name: "python",
-            color: "blue-text-gradient",
-        },
-        {
-            name: "scrapy",
-            color: "green-text-gradient",
-        },
-        {
-            name: "selenium",
-            color: "pink-text-gradient",
-        },
-        {
-            name: "web-scraping",
-            color: "blue-text-gradient",
-        },
-        {
-            name: "anti-bot-bypass",
-            color: "green-text-gradient",
-        },
-    ],
-    image: "https://raw.githubusercontent.com/vimscientist69/PropFlux/refs/heads/main/assets/logo.png",
-    source_code_link: "https://github.com/vimscientist69/PropFlux",
-    live_demo: "https://github.com/vimscientist69/PropFlux",
   },
 ];
 
