@@ -66,11 +66,13 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-        <button className='mt-5 bg-gradient-to-r from-black-100 to-red-500 text-white px-5 py-2 rounded-full'>
-          <a href={live_demo} target='_blank' rel='noreferrer'>
-            Live Demo
-          </a>
-        </button>
+        {live_demo && (
+            <button className='mt-5 bg-gradient-to-r from-black-100 to-red-500 text-white px-5 py-2 rounded-full'>
+                <a href={live_demo} target='_blank' rel='noreferrer'>
+                    Live Demo
+                </a>
+            </button>
+        )}
       </Tilt>
     </motion.div>
   );

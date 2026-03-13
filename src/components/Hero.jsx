@@ -5,52 +5,51 @@ import { ComputersCanvas } from "./canvas";
 import pfp from "../assets/professional-headshot-smile.png";
 
 const Hero = () => {
-  return (
-    <section className={`relative w-full h-screen flex justify-center items-center`}>
-      <div className={`max-w-7xl ${styles.paddingX} flex flex-row items-center gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[tomato]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+    return (
+        <section className={`relative w-full h-screen flex justify-center items-center`}>
+            <div className={`max-w-7xl ${styles.paddingX} flex flex-row items-center gap-5`}>
+                <div className='flex flex-col justify-center items-center mt-5'>
+                    <div className='w-5 h-5 rounded-full bg-[tomato]' />
+                    <div className='w-1 sm:h-80 h-40 violet-gradient' />
+                </div>
 
-        <div>
-          
-          <h1 className={`${styles.heroHeadText} text-white mt-2 sm:mt-0 sm:ml-4`}>
-            Hi, I'm <span className='text-[tomato]'>William!</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web-apps, backend <br className='sm:block hidden' />
-            systems, automation tools & <br className='sm:block hidden' />
-            more!
-          </p>
-        </div>
-        {/* Add a profile picture */}
-        <img
-            src={pfp} // Replace with your profile image URL
-            alt="Profile Picture"
-            className="w-16 h-16 sm:w-[300px] sm:h-[300px] rounded-full object-cover"
-          />
-      </div>
+                <div>
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
-      </div>
-    </section>
-  );
+                    <h1 className={`${styles.heroHeadText} text-white mt-2 sm:mt-0 sm:ml-4`}>
+                        Hi, I'm <span className='text-[tomato]'>William!</span>
+                    </h1>
+                    <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                        I build backend systems, APIs <br className='sm:block hidden' />
+                        and automation pipelines.
+                    </p>
+                </div>
+                {/* Add a profile picture */}
+                <img
+                    src={pfp}
+                    alt="Profile Picture"
+                    className="hidden md:block w-[300px] h-[300px] rounded-full object-cover"
+                />
+            </div>
+
+            <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+                <a href='#about'>
+                    <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+                        <motion.div
+                            animate={{
+                                y: [0, 24, 0],
+                            }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                            }}
+                            className='w-3 h-3 rounded-full bg-secondary mb-1'
+                        />
+                    </div>
+                </a>
+            </div>
+        </section>
+    );
 };
 
 export default Hero;

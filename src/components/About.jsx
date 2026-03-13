@@ -47,17 +47,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a software developer with experience in TypeScript,
-        JavaScript, Swift, and Python, and expertise in frameworks like React, Node.js, and NextJS. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a backend-focused software developer working with TypeScript, JavaScript, Swift, and Python. I design APIs, automation pipelines, and data-driven backend systems that integrate external services and power modern applications. My work focuses on reliable architecture, scalable services, and practical systems that solve real-world problems.
       </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+      {/* <div className='mt-20 flex flex-wrap gap-10'> */}
+      {/*   {services.map((service, index) => ( */}
+      {/*     <ServiceCard key={service.title} index={index} {...service} /> */}
+      {/*   ))} */}
+      {/* </div> */}
     </>
   );
 };

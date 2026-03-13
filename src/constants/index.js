@@ -48,15 +48,15 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Backend Developer",
+        title: "Backend Systems",
         icon: backend,
     },
     {
-        title: "Full-Stack Developer",
+        title: "API Development",
         icon: web,
     },
     {
-        title: "Automations Developer",
+        title: "Data Extraction & APIs",
         icon: creator,
     },
 ];
@@ -202,7 +202,7 @@ const projects = [
     ],
     image: "https://raw.githubusercontent.com/GetAutomaApp/AutomaInfraCore/refs/heads/develop/assets/logo.png",
     source_code_link: "https://github.com/GetAutomaApp/AutomaInfraCore",
-    live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
+    // live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
   },
   {
     name: "SwiftWebDriver",
@@ -244,7 +244,7 @@ const projects = [
     ],
     image: "https://raw.githubusercontent.com/GetAutomaApp/SwiftWebDriver/refs/heads/master/assets/logo.png",
     source_code_link: "https://github.com/GetAutomaApp/SwiftWebDriver",
-    live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
+    // live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
   },
   {
     name: "PropFlux",
@@ -273,7 +273,7 @@ const projects = [
     ],
     image: "https://raw.githubusercontent.com/vimscientist69/PropFlux/refs/heads/main/assets/logo.png",
     source_code_link: "https://github.com/vimscientist69/PropFlux",
-    live_demo: "https://github.com/vimscientist69/PropFlux",
+    // live_demo: "https://github.com/vimscientist69/PropFlux",
   },
   {
     name: "AutomaWebCore",
@@ -318,7 +318,7 @@ const projects = [
     ],
     image: "https://raw.githubusercontent.com/GetAutomaApp/AutomaWebCore/refs/heads/main/assets/logo.png",
     source_code_link: "https://github.com/GetAutomaApp/AutomaWebCore",
-    live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
+    // live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
   },
 ];
 
