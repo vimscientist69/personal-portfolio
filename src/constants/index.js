@@ -277,7 +277,7 @@ const projects = [
   },
   {
     name: "AutomaWebCore",
-    description: "Web automation infrastructure for Automa.",
+    description: "A lightweight backend service for scalable browser automation and web scraping.",
     tags: [
       {
         name: "swift",
@@ -300,15 +300,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "fly-io",
-        color: "green-text-gradient",
-      },
-      {
         name: "api-service",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "server-side-swift",
         color: "blue-text-gradient",
       },
       {
