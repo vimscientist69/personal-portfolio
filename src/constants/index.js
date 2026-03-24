@@ -162,156 +162,77 @@ const experiences = [
 ];
 
 const projects = [
-  {
-    name: "AutomaInfraCore",
-    description:
-      "AutomaInfraCore is the core infrastructure powering the Automa application.",
-    tags: [
-      {
-        name: "vapor",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ios",
-        color: "green-text-gradient",
-      },
-      {
-        name: "macos",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "backend",
-        color: "green-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "swiftui",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "ai-integration",
-        color: "green-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: "https://raw.githubusercontent.com/GetAutomaApp/AutomaInfraCore/refs/heads/develop/assets/logo.png",
-    source_code_link: "https://github.com/GetAutomaApp/AutomaInfraCore",
-    // live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
-  },
-  {
-    name: "SwiftWebDriver",
-    description:
-      "Library allows you to work with Selenium WebDriver on server-side Swift.",
-    tags: [
-      {
-        name: "swift",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "selenium",
-        color: "green-text-gradient",
-      },
-      {
-        name: "webdriver",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "automation",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "chrome-driver",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ui-testing",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "browser-automation",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: "https://raw.githubusercontent.com/GetAutomaApp/SwiftWebDriver/refs/heads/master/assets/logo.png",
-    source_code_link: "https://github.com/GetAutomaApp/SwiftWebDriver",
-    // live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
-  },
-  {
-    name: "PropFlux",
-    description: "PropFlux is a scalable real estate data extraction engine designed for resilient, multi-site scraping.",
-    tags: [
-        {
-            name: "python",
-            color: "blue-text-gradient",
-        },
-        {
-            name: "scrapy",
-            color: "green-text-gradient",
-        },
-        {
-            name: "selenium",
-            color: "pink-text-gradient",
-        },
-        {
-            name: "web-scraping",
-            color: "blue-text-gradient",
-        },
-        {
-            name: "anti-bot-bypass",
-            color: "green-text-gradient",
-        },
-    ],
-    image: "https://raw.githubusercontent.com/vimscientist69/PropFlux/refs/heads/main/assets/logo.png",
-    source_code_link: "https://github.com/vimscientist69/PropFlux",
-    // live_demo: "https://github.com/vimscientist69/PropFlux",
-  },
-  {
-    name: "AutomaWebCore",
-    description: "A lightweight backend service for scalable browser automation and web scraping.",
-    tags: [
-      {
-        name: "swift",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "selenium-grid",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "autoscaling",
-        color: "green-text-gradient",
-      },
-      {
-        name: "web-automation",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "api-service",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "infrastructure",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: "https://raw.githubusercontent.com/GetAutomaApp/AutomaWebCore/refs/heads/main/assets/logo.png",
-    source_code_link: "https://github.com/GetAutomaApp/AutomaWebCore",
-    // live_demo: "https://github.com/GetAutomaApp/AutomaWebCore",
-  },
+    {
+        name: "PropFlux",
+        description:
+        "Production-grade scraping and ETL system for large-scale data extraction, normalization, and enrichment. Includes a backend API and monitoring dashboard for managing scraping jobs and tracking results across multiple sites.",
+        tags: [
+            { name: "python", color: "blue-text-gradient" },
+            { name: "scrapy", color: "green-text-gradient" },
+            { name: "selenium", color: "pink-text-gradient" },
+            { name: "etl", color: "blue-text-gradient" },
+            { name: "api", color: "green-text-gradient" },
+            { name: "data-pipelines", color: "pink-text-gradient" },
+        ],
+        image: "https://raw.githubusercontent.com/vimscientist69/PropFlux/refs/heads/main/assets/logo.png",
+        source_code_link: "https://github.com/vimscientist69/PropFlux",
+    },
+    {
+        name: "AutomaInfraCore",
+        description:
+        "Backend infrastructure powering the Automa application. It provides scalable API services and background job processing for reliable data handling, integrations, and system monitoring.",
+        tags: [
+            { name: "vapor", color: "blue-text-gradient" },
+            { name: "ios", color: "green-text-gradient" },
+            { name: "macos", color: "pink-text-gradient" },
+            { name: "backend", color: "green-text-gradient" },
+            { name: "postgresql", color: "blue-text-gradient" },
+            { name: "swiftui", color: "pink-text-gradient" },
+            { name: "ai-integration", color: "green-text-gradient" },
+            { name: "docker", color: "blue-text-gradient" },
+        ],
+        image:
+        "https://raw.githubusercontent.com/GetAutomaApp/AutomaInfraCore/refs/heads/develop/assets/logo.png",
+        source_code_link:
+        "https://github.com/GetAutomaApp/AutomaInfraCore",
+    },
+    {
+        name: "SwiftWebDriver",
+        description:
+        "Production-grade library for using Selenium WebDriver with server-side Swift. Designed for reliable browser automation, it enables scalable scraping and testing workflows with full control over headless browser execution.",
+        tags: [
+            { name: "swift", color: "blue-text-gradient" },
+            { name: "selenium", color: "green-text-gradient" },
+            { name: "webdriver", color: "pink-text-gradient" },
+            { name: "automation", color: "blue-text-gradient" },
+            { name: "docker", color: "pink-text-gradient" },
+            { name: "chrome-driver", color: "green-text-gradient" },
+            { name: "ui-testing", color: "blue-text-gradient" },
+            { name: "browser-automation", color: "blue-text-gradient" },
+        ],
+        image:
+        "https://raw.githubusercontent.com/GetAutomaApp/SwiftWebDriver/refs/heads/master/assets/logo.png",
+        source_code_link:
+        "https://github.com/GetAutomaApp/SwiftWebDriver",
+    },
+    {
+        name: "AutomaWebCore",
+        description:
+        "Backend service for scalable browser automation and web scraping. It manages distributed automation workloads, Selenium Grid orchestration, and API-driven job execution for high-volume scraping systems.",
+        tags: [
+            { name: "swift", color: "blue-text-gradient" },
+            { name: "selenium-grid", color: "pink-text-gradient" },
+            { name: "autoscaling", color: "green-text-gradient" },
+            { name: "web-automation", color: "blue-text-gradient" },
+            { name: "docker", color: "pink-text-gradient" },
+            { name: "api-service", color: "blue-text-gradient" },
+            { name: "infrastructure", color: "blue-text-gradient" },
+        ],
+        image:
+        "https://raw.githubusercontent.com/GetAutomaApp/AutomaWebCore/refs/heads/main/assets/logo.png",
+        source_code_link:
+        "https://github.com/GetAutomaApp/AutomaWebCore",
+    },
 ];
 
 export { services, technologies, experiences, projects };
