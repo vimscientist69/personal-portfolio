@@ -1,82 +1,51 @@
-import {
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
-import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
-import {ServiceCard} from "./About.jsx"
-import { Link } from "react-router-dom";
+import { textVariant, fadeIn } from "../utils/motion";
 
-const HireMeCard = ({ experience }) => {
-  return (
-    <VerticalTimelineElement
-      contentStyle={{
-        background: "#000000",
-        color: "#fff",
-        border: "1px solid white",
-      }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
-      icon={
-        <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
-        </div>
-      }
-    >
-      <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
-      </div>
-
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-          </li>
-        ))}
-      </ul>
-    </VerticalTimelineElement>
-  );
-};
+const HIRE_EMAIL = "mailto:vimscientist69@gmail.com";
+const CALENDLY = "https://calendly.com/vimscientist69/30min";
 
 const HireMe = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          I'm open to work part-time remotely
+          I&apos;m always ready for new challenges
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Hire Me! 👋
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
-        {/* {services.map((service, index) => ( */}
-        {/*     ["Backend Developer", "Full-Stack Developer", "Automations Developer"].includes(service.title) &&  */}
-        {/*   <Link key={service.title} to="https://calendly.com/vimscientist69/30min"> */}
-        {/*     <ServiceCard key={service.title} index={index} {...service} /> */}
-        {/*   </Link> */}
-        {/* ))} */}
-      </div>
+      <motion.p
+        variants={fadeIn("", "", 0.08, 1)}
+        className="mt-8 text-center text-secondary text-[17px] max-w-2xl mx-auto leading-[30px]"
+      >
+        Open to part-time remote work. Send a message or book a short intro
+        call—whichever fits you best.
+      </motion.p>
+
+      <motion.div
+        variants={fadeIn("up", "spring", 0.12, 0.9)}
+        className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center"
+      >
+        <a
+          href={HIRE_EMAIL}
+          className="inline-flex justify-center rounded-xl px-8 py-3.5 text-[15px] font-semibold text-white bg-accent hover:bg-accent-muted transition-colors shadow-[0_8px_32px_-8px_rgba(224,99,74,0.45)]"
+        >
+          Email me
+        </a>
+        <a
+          href={CALENDLY}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex justify-center rounded-xl px-8 py-3.5 text-[15px] font-semibold text-white border border-edge-subtle bg-surface hover:bg-surface-raised hover:border-edge-strong transition-colors"
+        >
+          Schedule a call
+        </a>
+      </motion.div>
     </>
   );
 };

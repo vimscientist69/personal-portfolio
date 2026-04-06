@@ -207,3 +207,13 @@
 .react-activity-calendar__scroll-container svg {
     width: 100% !important;
 }
+
+/* Timeline: softer cards aligned with site surfaces */
+.vertical-timeline-element-content {
+    border-radius: 16px !important;
+    box-shadow: none !important;
+}
+
+.vertical-timeline-element-date {
+    color: rgba(255, 255, 255, 0.55) !important;
+}

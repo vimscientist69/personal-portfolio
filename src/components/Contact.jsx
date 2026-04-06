@@ -1,113 +1,98 @@
-  import React, { useRef, useState } from "react";
-  import { motion } from "framer-motion";
-  import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import GitHubCalendar from "react-github-calendar";
 
-  import { styles } from "../styles";
-  import { EarthCanvas } from "./canvas";
-  import { SectionWrapper } from "../hoc";
-  import { slideIn } from "../utils/motion";
-  import GitHubCalendar from "react-github-calendar";
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
-  const Contact = () => {
-    const formRef = useRef();
-    const [form, setForm] = useState({
-      name: "",
-      email: "",
-      message: "",
+// Muted ramp: peak is dusty terracotta, not bright orange-red (reads calmer on dark UI)
+const githubContributionTheme = {
+  dark: ["#0f0f0f", "#1c1616", "#2e2422", "#453330", "#6d4f47"],
+};
+
+const inputClassName =
+  "bg-surface border border-edge-subtle py-4 px-6 placeholder:text-secondary/80 text-white rounded-xl outline-none font-medium transition-[border-color,box-shadow] focus:border-accent/45 focus:ring-1 focus:ring-accent/25";
+
+const Contact = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
     });
+  };
 
-    const [loading, setLoading] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-    const handleChange = (e) => {
-      const { target } = e;
-      const { name, value } = target;
+    emailjs
+      .send(
+        "williamferns-org-pfio",
+        "template_dmoodgb",
+        {
+          name: form.name,
+          to_name: "William Ferns",
+          email: form.email,
+          to_email: "vimscientist69@gmail.com",
+          message: form.message,
+        },
+        "GxpcuDK4zVZixKvl6"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
 
-      setForm({
-        ...form,
-        [name]: value,
-      });
-    };
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
 
-    const selectLastHalfYear = contributions => {
-      const currentYear = new Date().getFullYear();
-      const currentMonth = new Date().getMonth();
-      const shownMonths = 13
-    
-      return contributions.filter(activity => {
-        const date = new Date(activity.date);
-        const monthOfDay = date.getMonth();
-    
-        return (
-          date.getFullYear() === currentYear &&
-          monthOfDay > currentMonth - shownMonths &&
-          monthOfDay <= currentMonth
-        );
-      });
-    };
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      setLoading(true);
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
+  };
 
-      emailjs
-        .send(
-          'williamferns-org-pfio',
-          "template_dmoodgb",
-          {
-            name: form.name,
-            to_name: "William Ferns",
-            email: form.email,
-            to_email: "vimscientist69@gmail.com",
-            message: form.message,
-          },
-          "GxpcuDK4zVZixKvl6"
-        )
-        .then(
-          () => {
-            setLoading(false);
-            alert("Thank you. I will get back to you as soon as possible.");
-
-            setForm({
-              name: "",
-
-              email: "",
-              message: "",
-            });
-          },
-          (error) => {
-            setLoading(false);
-            console.error(error);
-
-            alert("Ahh, something went wrong. Please try again.");
-          }
-        );
-    };
-
-    return (
-      <div className="w-full">
-        <div className="w-full flex flex-col items-center gap-10 overflow-hidden">
-          <motion.div 
-            variants={slideIn("right", "tween", 0.2, 1)}
-            className="w-full max-w-3xl mx-auto"
-          >
-            <div className="w-full pb-2">
-              <div className="w-full mx-auto">
-                <GitHubCalendar
-                  username="vimscientist69"
-                  labels={{
-                    totalCount: `{{count}} contributions in the last year`,
-                  }}
-                  theme={{
-                    dark: ["#1f1f1f", "red"],
-                  }}
-                />
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={slideIn("left", "tween", 0.2, 1)}
-            className="w-full max-w-3xl mx-auto bg-black p-6 sm:p-8 rounded-2xl"
-            style={{ border: "1px solid white" }}
-          >
+  return (
+    <div className="w-full">
+      <div className="w-full flex flex-col items-center gap-10 overflow-hidden">
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="w-full max-w-3xl mx-auto"
+        >
+          <div className="w-full pb-2 rounded-2xl border border-edge-subtle bg-surface/50 p-4 sm:p-6">
+            <GitHubCalendar
+              username="vimscientist69"
+              labels={{
+                totalCount: `{{count}} contributions in the last year`,
+              }}
+              theme={githubContributionTheme}
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="w-full max-w-3xl mx-auto bg-[#050505] p-6 sm:p-8 rounded-2xl border border-edge-subtle"
+        >
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
 
@@ -117,50 +102,52 @@
             className="mt-12 flex flex-col gap-8"
           >
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Name</span>
+              <span className="text-white/90 font-medium mb-4">Your Name</span>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your good name?"
-                className="bg-gray-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className={inputClassName}
               />
             </label>
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your email</span>
+              <span className="text-white/90 font-medium mb-4">Your email</span>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your web address?"
-                className="bg-gray-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className={inputClassName}
               />
             </label>
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Message</span>
+              <span className="text-white/90 font-medium mb-4">
+                Your Message
+              </span>
               <textarea
                 rows={7}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What you want to say?"
-                className="bg-gray-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className={inputClassName}
               />
             </label>
 
             <button
               type="submit"
-              className="bg-gray-900 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              className="bg-accent hover:bg-accent-muted py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-[0_12px_40px_-12px_rgba(224,99,74,0.5)] transition-colors"
             >
               {loading ? "Sending..." : "Send"}
             </button>
           </form>
-          </motion.div>
-        </div>
+        </motion.div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
-  export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Contact, "contact");
