@@ -208,6 +208,17 @@
     width: 100% !important;
 }
 
+/* GitHub contributions: no light card background; text matches dark page */
+.github-calendar-wrap {
+    background: transparent;
+    border-radius: 1rem;
+}
+
+.github-calendar-wrap .react-activity-calendar {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.82);
+}
+
 /* Timeline: softer cards aligned with site surfaces */
 .vertical-timeline-element-content {
     border-radius: 16px !important;

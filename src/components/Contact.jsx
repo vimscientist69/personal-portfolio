@@ -7,9 +7,11 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-// Muted ramp: peak is dusty terracotta, not bright orange-red (reads calmer on dark UI)
+// Dark-only ramp (light + dark keys identical so OS light mode cannot show gray cells).
+// colorScheme="dark" keeps the component on this palette.
 const githubContributionTheme = {
-  dark: ["#0f0f0f", "#1c1616", "#2e2422", "#453330", "#6d4f47"],
+  light: ["#0a0a0a", "#1a1414", "#2a2020", "#3d2e2a", "#5c433c"],
+  dark: ["#0a0a0a", "#1a1414", "#2a2020", "#3d2e2a", "#5c433c"],
 };
 
 const inputClassName =
@@ -79,9 +81,10 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="w-full max-w-3xl mx-auto"
         >
-          <div className="w-full pb-2 rounded-2xl border border-edge-subtle bg-surface/50 p-4 sm:p-6">
+          <div className="github-calendar-wrap w-full pb-2 p-4 sm:p-6">
             <GitHubCalendar
               username="vimscientist69"
+              colorScheme="dark"
               labels={{
                 totalCount: `{{count}} contributions in the last year`,
               }}
