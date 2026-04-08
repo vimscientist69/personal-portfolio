@@ -32,16 +32,12 @@ export const navLinks = [
         title: "Work",
     },
     {
-        id: "hire",
-        title: "Hire Me",
-    },
-    {
-        id: "projects",
-        title: "Projects",
-    },
-    {
         id: "contact",
         title: "Contact",
+    },
+    {
+        id: "hire",
+        title: "Hire Me",
     },
     // {
     //     title: "Blog",
@@ -166,6 +162,20 @@ const experiences = [
 ];
 
 const projects = [
+    {
+        name: "PropIntel",
+        description:
+        "Lead intelligence and enrichment platform that transforms raw real estate data into structured, high-quality leads. Combines multi-source scraping, validation, and scoring into a unified pipeline with API and dashboard support.",
+        tags: [
+            { name: "python", color: "blue-text-gradient" },
+            { name: "fastapi", color: "green-text-gradient" },
+            { name: "react", color: "pink-text-gradient" },
+            { name: "lead-enrichment", color: "blue-text-gradient" },
+            { name: "workflow-automation", color: "pink-text-gradient" },
+        ],
+        image: "https://raw.githubusercontent.com/vimscientist69/PropIntel/refs/heads/main/assets/logo.png",
+        source_code_link: "https://github.com/vimscientist69/PropIntel",
+    },
     {
         name: "PropFlux",
         description:
