@@ -123,8 +123,8 @@ const technologies = [
 const experiences = [
     {
         title: "Freelance Software Developer",
-        company_name: "Upwork",
-        icon: upwork,
+        company_name: "Self-Employed",
+        icon: automa,
         iconBg: "black",
         date: "February 2026 - Present day",
         points: [
