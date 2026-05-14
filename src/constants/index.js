@@ -163,6 +163,20 @@ const experiences = [
 
 const projects = [
     {
+        name: "PropSignal",
+        description:
+        "Property listing intelligence platform that ingests large-scale real estate datasets, applies configurable scoring strategies, and ranks opportunities through a full-stack analytics system with API, CLI, and dashboard workflows.",
+        tags: [
+            { name: "python", color: "blue-text-gradient" },
+            { name: "fastapi", color: "green-text-gradient" },
+            { name: "nextjs", color: "pink-text-gradient" },
+            { name: "postgresql", color: "blue-text-gradient" },
+            { name: "data-analytics", color: "green-text-gradient" },
+        ],
+        image: "https://raw.githubusercontent.com/vimscientist69/PropSignal/refs/heads/main/assets/logo.png",
+        source_code_link: "https://github.com/vimscientist69/PropSignal",
+    },
+    {
         name: "PropIntel",
         description:
         "Lead intelligence and enrichment platform that transforms raw real estate data into structured, high-quality leads. Combines multi-source scraping, validation, and scoring into a unified pipeline with API and dashboard support.",
