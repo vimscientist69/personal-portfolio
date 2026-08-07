@@ -126,7 +126,7 @@ const experiences = [
         company_name: "Self-Employed",
         icon: automa,
         iconBg: "black",
-        date: "February 2026 - Present day",
+        date: "February 2026 - June 2026",
         points: [
             "Built a flight booking platform with Next.js integrating the Riya Travel API, featuring real-time search, multi-currency support, dynamic pricing, and an admin dashboard for managing markups and incentives.",
             "Providing freelance web scraping solutions for data extraction, automation, and analysis",
@@ -138,7 +138,7 @@ const experiences = [
         company_name: "Automa",
         icon: automa,
         iconBg: "black",
-        date: "March 2025 - Present day",
+        date: "March 2025 - July 2026",
         points: [
             "Built and maintained backend systems in Swift, including user authentication, ORM/database layers, background job processing, observability, and continuous integration/testing.",
             "Designed and operated cloud infrastructure on Fly.io, including PostgreSQL, Temporal, Selenium Grid, and an autoscaling workflow to improve reliability, developer speed, and cost efficiency.",
