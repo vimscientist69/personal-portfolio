@@ -58,12 +58,12 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[17px] font-bold cursor-pointer tracking-tight">
+          <p className="text-white text-[16px] font-medium cursor-pointer">
             William Ferns
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-8 lg:gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-6">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -71,7 +71,7 @@ const Navbar = () => {
                 !nav.link && active === nav.id
                   ? "text-white"
                   : "text-secondary"
-              } hover:text-white text-[16px] font-medium cursor-pointer transition-colors`}
+              } hover:text-white text-[14px] cursor-pointer transition-colors`}
               onClick={() => {
                 if (!nav.link) setActive(nav.id);
               }}
